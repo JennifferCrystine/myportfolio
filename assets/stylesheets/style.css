@@ -51,16 +51,15 @@ table {
 
 :root {
     --cinza-fundo: #C2C4FF;
-    --cinza-hover: 
 }
 
 @font-face {
     font-family: NotoSerif-Regular;
-    src: url(fonts/NotoSerif-Regular.ttf);
+    src: url(../fonts/NotoSerif-Regular.ttf);
 }
 @font-face {
     font-family: PoiretOne-Regular;
-    src: url(fonts/PoiretOne-Regular.ttf);
+    src: url(../fonts/PoiretOne-Regular.ttf);
 }
 
 .navBar{
@@ -130,17 +129,47 @@ h2 {
     padding-bottom: 10%;
 }
 
+.copyright span {
+    display: block;
+}
+
 
 .container {
     width: 80vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    display: flex;
 }
 
 .gerenciados {
-    width: 15vw;
-    height: 15vh;
-    background-color: 
+    width: 12vw;
+    height: 25vh;
+    background-color: var(--cinza-fundo);
+    font-family: PoiretOne-Regular;
+    font-size: 1.75em;
 }
 
+.gerenciados span {
+    display: block;
+}
+
+.layouts {
+    width: 12vw;
+    height: 25vh;
+    background-color: var(--cinza-fundo);
+    font-family: PoiretOne-Regular;
+    font-size: 1.75em;
+}
+
+.desenvolvidos {
+    width: 12vw;
+    height: 25vh;
+    background-color: var(--cinza-fundo);
+    font-family: PoiretOne-Regular;
+    font-size: 1.75em;
+}
+
+.desenvolvidos span {
+    display: block;
+}
