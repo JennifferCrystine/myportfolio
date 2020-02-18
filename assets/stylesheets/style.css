@@ -3,49 +3,139 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /***************************************************************************************/
 
@@ -57,28 +147,37 @@ table {
     font-family: NotoSerif-Regular;
     src: url(../fonts/NotoSerif-Regular.ttf);
 }
+
 @font-face {
     font-family: PoiretOne-Regular;
     src: url(../fonts/PoiretOne-Regular.ttf);
 }
 
-.navBar{
+.home {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: fit-content;
+}
+
+.sideBar {}
+
+.navBar {
     height: 100vh;
     width: 20vw;
     background-color: #FFEDA2;
 }
 
-
-.navBarHeader{
+.navBarHeader {
     display: flex;
     flex-direction: column;
-    align-content: center; 
+    align-content: center;
 }
 
 .imagemHome {
     width: 70%;
     height: 70.3%;
-    border-radius: 100%; 
+    border-radius: 100%;
     margin-left: 15.1%;
     margin-top: 10%;
 }
@@ -89,19 +188,16 @@ table {
 }
 
 a {
-    font-family:"NotoSerif-Regular";
+    font-family: "NotoSerif-Regular";
     text-decoration: none;
     font-size: 120%;
     text-align: center;
     font-family: Georgia;
     color: #000A0A;
     margin-top: 15%;
-    
 }
 
-
-
-.navBarFooter{
+.navBarFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,7 +216,8 @@ a {
 
 .linkedin {
     width: 65%;
-    height: 65%;;
+    height: 65%;
+    ;
 }
 
 h2 {
@@ -133,6 +230,16 @@ h2 {
     display: block;
 }
 
+.conteudo {
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: PoiretOne-Regular;
+}
 
 .container {
     width: 80vw;
@@ -140,36 +247,19 @@ h2 {
     display: flex;
     flex-direction: row;
     display: flex;
+    margin-top: 10%;
 }
 
-.gerenciados {
+.container h2 {
+    font-family: PoiretOne-Regular;
+    font-size: 1.75em;
+    transform: translateY(50%);
+}
+
+.col-sm {
     width: 12vw;
     height: 25vh;
     background-color: var(--cinza-fundo);
-    font-family: PoiretOne-Regular;
-    font-size: 1.75em;
-}
-
-.gerenciados span {
-    display: block;
-}
-
-.layouts {
-    width: 12vw;
-    height: 25vh;
-    background-color: var(--cinza-fundo);
-    font-family: PoiretOne-Regular;
-    font-size: 1.75em;
-}
-
-.desenvolvidos {
-    width: 12vw;
-    height: 25vh;
-    background-color: var(--cinza-fundo);
-    font-family: PoiretOne-Regular;
-    font-size: 1.75em;
-}
-
-.desenvolvidos span {
-    display: block;
+    margin: 0 auto;
+    justify-content: left;
 }
